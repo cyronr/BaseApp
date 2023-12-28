@@ -1,8 +1,8 @@
-﻿using Domain.Exceptions;
+﻿using BaseApp.Domain.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 
-namespace WebAPI.Handlers;
+namespace BaseApp.WebAPI.Handlers;
 
 internal partial class AppExceptionHandler(ILogger<AppExceptionHandler> _logger) : IExceptionHandler
 {

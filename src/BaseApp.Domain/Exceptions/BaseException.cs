@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Domain.Exceptions;
+namespace BaseApp.Domain.Exceptions;
 
 /// <summary>
 /// Base application Exception. Every custom application Exception should inherit from it.

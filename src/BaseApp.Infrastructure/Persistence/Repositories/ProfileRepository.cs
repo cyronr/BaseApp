@@ -1,9 +1,9 @@
-﻿using Application.Persistence.Repositories;
+﻿using BaseApp.Application.Persistence.Repositories;
 using BaseApp.Domain.Entities.ProfileEntities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Infrastructure.Persistence.Repositories;
+namespace BaseApp.Infrastructure.Persistence.Repositories;
 
 internal class ProfileRepository : GenericRepository<Profile>, IProfileRepository
 {

@@ -1,4 +1,4 @@
-﻿namespace Application.Common;
+﻿namespace BaseApp.Application.Common;
 
 public interface IDateTimeProvider
 {

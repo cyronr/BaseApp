@@ -1,4 +1,4 @@
-﻿using WebAPI.Requests;
+﻿using BaseApp.WebAPI.Requests;
 
 namespace API.Requests.AuthenticationRequests;
 

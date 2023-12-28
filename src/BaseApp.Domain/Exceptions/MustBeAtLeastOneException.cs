@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Domain.Exceptions;
+namespace BaseApp.Domain.Exceptions;
 
 /// <summary>
 /// Application MustBeAtLeastOneException. Sets HttpStatusCode to BadRequest (400)

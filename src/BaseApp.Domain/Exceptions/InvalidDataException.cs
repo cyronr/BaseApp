@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Domain.Exceptions;
+namespace BaseApp.Domain.Exceptions;
 
 /// <summary>
 /// Application InvalidDataException. Sets HttpStatusCode to BadRequest (400)

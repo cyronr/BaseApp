@@ -1,8 +1,8 @@
-﻿using Application.Features.AuthenticationFeatures.Common;
+﻿using BaseApp.Application.Features.AuthenticationFeatures.Common;
 using Mapster;
-using WebAPI.Responses.AuthenticationResponses;
+using BaseApp.WebAPI.Responses.AuthenticationResponses;
 
-namespace WebAPI.Common;
+namespace BaseApp.WebAPI.Common;
 
 internal static class MapsterConfiguration
 {

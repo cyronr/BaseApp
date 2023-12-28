@@ -1,9 +1,9 @@
 using BaseApp.Domain.Entities.ProfileEntities;
-using Infrastructure.Common.Classes;
+using BaseApp.Infrastructure.Common.Classes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
-namespace Infrastructure.Persistence;
+namespace BaseApp.Infrastructure.Persistence;
 
 public class AppDbContext : DbContext
 {

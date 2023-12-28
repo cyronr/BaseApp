@@ -1,4 +1,4 @@
-﻿namespace WebAPI.Requests.AuthenticationRequests;
+﻿namespace BaseApp.WebAPI.Requests.AuthenticationRequests;
 
 public abstract record CreateProfileRequest : BaseRequest
 {

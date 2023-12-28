@@ -1,6 +1,6 @@
-﻿using Application.Common;
+﻿using BaseApp.Application.Common;
 
-namespace Infrastructure.Common;
+namespace BaseApp.Infrastructure.Common;
 
 internal class DateTimeProvider : IDateTimeProvider
 {

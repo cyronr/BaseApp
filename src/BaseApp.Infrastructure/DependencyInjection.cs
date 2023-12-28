@@ -1,21 +1,21 @@
-﻿using Application.Common;
-using Application.Common.Http;
-using Application.Common.MessageSenders;
-using Application.Persistence;
-using Application.Persistence.Repositories;
-using Application.Services;
+﻿using BaseApp.Application.Common;
+using BaseApp.Application.Common.Http;
+using BaseApp.Application.Common.MessageSenders;
+using BaseApp.Application.Persistence;
+using BaseApp.Application.Persistence.Repositories;
+using BaseApp.Application.Services;
 using BaseApp.Domain.Entities.ProfileEntities;
-using Infrastructure.Common;
-using Infrastructure.Common.Classes;
-using Infrastructure.Common.Http;
-using Infrastructure.Common.MessageSenders;
-using Infrastructure.Persistence;
-using Infrastructure.Persistence.Repositories;
-using Infrastructure.Services;
+using BaseApp.Infrastructure.Common;
+using BaseApp.Infrastructure.Common.Classes;
+using BaseApp.Infrastructure.Common.Http;
+using BaseApp.Infrastructure.Common.MessageSenders;
+using BaseApp.Infrastructure.Persistence;
+using BaseApp.Infrastructure.Persistence.Repositories;
+using BaseApp.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Infrastructure;
+namespace BaseApp.Infrastructure;
 
 public static class DependencyInjection
 {

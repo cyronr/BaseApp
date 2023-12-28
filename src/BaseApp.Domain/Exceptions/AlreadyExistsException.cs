@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace Domain.Exceptions;
+namespace BaseApp.Domain.Exceptions;
 
 /// <summary>
 /// Application AlreadyExistsException. Sets HttpStatusCode to Conflict (409)

@@ -1,7 +1,7 @@
 ﻿using BaseApp.Domain.Entities.BaseEntities;
 using System.Linq.Expressions;
 
-namespace Application.Persistence.Repositories;
+namespace BaseApp.Application.Persistence.Repositories;
 
 public interface IRepository { }
 

@@ -1,6 +1,6 @@
-﻿using WebAPI.Common;
+﻿using BaseApp.WebAPI.Common;
 
-namespace WebAPI;
+namespace BaseApp.WebAPI;
 
 public static class DependencyInjection
 {

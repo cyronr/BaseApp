@@ -1,11 +1,11 @@
-﻿using Application.Persistence.Repositories;
+﻿using BaseApp.Application.Persistence.Repositories;
 using BaseApp.Domain.Entities.BaseEntities;
 using Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Linq.Expressions;
 
-namespace Infrastructure.Persistence.Repositories;
+namespace BaseApp.Infrastructure.Persistence.Repositories;
 
 internal abstract class GenericRepository<TEntity> : IRepository<TEntity> where TEntity : Entity
 {

@@ -1,6 +1,6 @@
 ﻿using BaseApp.Domain.Entities.ProfileEntities;
 
-namespace Application.Common.AppProfile;
+namespace BaseApp.Application.Common.AppProfile;
 
 public interface ICurrentLoggedProfile
 {

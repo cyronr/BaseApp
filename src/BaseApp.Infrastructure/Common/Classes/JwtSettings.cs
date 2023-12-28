@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Common.Classes;
+﻿namespace BaseApp.Infrastructure.Common.Classes;
 
 public class JwtSettings
 {

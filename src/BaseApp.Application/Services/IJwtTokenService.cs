@@ -1,6 +1,6 @@
 ﻿using BaseApp.Domain.Entities.ProfileEntities;
 
-namespace Application.Services;
+namespace BaseApp.Application.Services;
 
 public interface IJwtTokenService
 {

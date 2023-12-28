@@ -1,4 +1,4 @@
-﻿namespace Application.Common.Pagination
+﻿namespace BaseApp.Application.Common.Pagination
 {
     public class PagedList<T> : List<T>
     {

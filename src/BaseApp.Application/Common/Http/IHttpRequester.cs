@@ -1,4 +1,4 @@
-﻿namespace Application.Common.Http
+﻿namespace BaseApp.Application.Common.Http
 {
     public interface IHttpRequester
     {

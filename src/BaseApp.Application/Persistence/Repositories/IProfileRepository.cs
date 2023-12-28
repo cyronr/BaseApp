@@ -1,6 +1,6 @@
 ﻿using BaseApp.Domain.Entities.ProfileEntities;
 
-namespace Application.Persistence.Repositories;
+namespace BaseApp.Application.Persistence.Repositories;
 
 public interface IProfileRepository : IRepository<Profile>
 {

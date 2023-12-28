@@ -1,17 +1,17 @@
-﻿using Application;
-using Domain;
+﻿using BaseApp.Infrastructure;
+using BaseApp.Domain;
+using BaseApp.Application;
+using BaseApp.WebAPI.ApplicationConfiguration;
+using BaseApp.WebAPI.Handlers;
 using FluentValidation;
-using Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using Serilog.Core;
 using Swashbuckle.AspNetCore.Filters;
-using WebAPI.ApplicationConfiguration;
-using WebAPI.Handlers;
 
-namespace WebAPI.ApplicationConfiguration;
+namespace BaseApp.WebAPI.ApplicationConfiguration;
 
 internal static class BuilderExtensions
 {

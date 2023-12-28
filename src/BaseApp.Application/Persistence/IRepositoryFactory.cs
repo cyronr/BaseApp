@@ -1,7 +1,7 @@
-﻿using Application.Persistence.Repositories;
+﻿using BaseApp.Application.Persistence.Repositories;
 using BaseApp.Domain.Entities.BaseEntities;
 
-namespace Application.Persistence;
+namespace BaseApp.Application.Persistence;
 
 public interface IRepositoryFactory
 {

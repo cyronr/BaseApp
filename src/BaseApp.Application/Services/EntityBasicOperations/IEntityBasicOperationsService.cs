@@ -1,6 +1,6 @@
 ﻿using BaseApp.Domain.Entities.BaseEntities;
 
-namespace Application.Services.EntityBasicOperations;
+namespace BaseApp.Application.Services.EntityBasicOperations;
 
 internal interface IEntityBasicOperationsService<TEntity> where TEntity : Entity
 {

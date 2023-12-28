@@ -1,6 +1,6 @@
 ﻿namespace Domain
 {
-    public class Domain
+    public class BaseAppDomain
     {
     }
 }

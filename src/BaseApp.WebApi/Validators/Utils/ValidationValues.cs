@@ -1,4 +1,4 @@
-﻿namespace WebAPI.Validators.Utils;
+﻿namespace BaseApp.WebAPI.Validators.Utils;
 
 public static class ValidationValues
 {

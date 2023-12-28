@@ -1,7 +1,7 @@
-﻿using Application.Services;
+﻿using BaseApp.Application.Services;
 using Microsoft.Extensions.Logging;
 
-namespace Infrastructure.Services;
+namespace BaseApp.Infrastructure.Services;
 
 public class PasswordService(ILogger<PasswordService> _logger) : IPasswordService
 {

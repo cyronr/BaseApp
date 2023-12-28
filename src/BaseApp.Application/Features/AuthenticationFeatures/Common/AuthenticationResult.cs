@@ -1,4 +1,4 @@
-﻿namespace Application.Features.AuthenticationFeatures.Common;
+﻿namespace BaseApp.Application.Features.AuthenticationFeatures.Common;
 
 public record AuthenticationResult
 (

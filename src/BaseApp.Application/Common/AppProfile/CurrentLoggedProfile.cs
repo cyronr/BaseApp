@@ -1,12 +1,12 @@
-﻿using Application.Persistence;
-using Application.Persistence.Repositories;
+﻿using BaseApp.Application.Persistence;
+using BaseApp.Application.Persistence.Repositories;
 using BaseApp.Domain.Entities.ProfileEntities;
-using Domain.Exceptions;
+using BaseApp.Domain.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Security.Claims;
 
-namespace Application.Common.AppProfile;
+namespace BaseApp.Application.Common.AppProfile;
 
 public class CurrentLoggedProfile : ICurrentLoggedProfile
 {

@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Common.MessageSenders
+﻿namespace BaseApp.Infrastructure.Common.MessageSenders
 {
     public class SmtpConfig
     {

@@ -1,15 +1,12 @@
 ﻿using API.Requests.AuthenticationRequests;
 using API.Requests.AuthenticationResponses;
-using Application.Common.AppProfile;
-using Application.Features.AuthenticationFeatures.Commands.CreateAdminProfile;
-using Application.Features.AuthenticationFeatures.Common;
-using Application.Features.AuthenticationFeatures.Queries.Login;
-using Domain.Exceptions;
+using BaseApp.Application.Features.AuthenticationFeatures.Commands.CreateAdminProfile;
+using BaseApp.Application.Features.AuthenticationFeatures.Common;
+using BaseApp.Application.Features.AuthenticationFeatures.Queries.Login;
+using BaseApp.WebAPI.Requests.AuthenticationRequests;
 using Mapster;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Requests.AuthenticationRequests;
 
 namespace API.Controllers;
 

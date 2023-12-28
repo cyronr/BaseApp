@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Domain.Exceptions;
+namespace BaseApp.Domain.Exceptions;
 
 /// <summary>
 /// Application AuthenticationException. Sets HttpStatusCode to Unauthorized (401)

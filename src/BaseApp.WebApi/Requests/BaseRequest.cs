@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace WebAPI.Requests;
+namespace BaseApp.WebAPI.Requests;
 
 public record BaseRequest
 {

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.Configuration;
+namespace BaseApp.Infrastructure.Configuration;
 
 public class ProfileConfiguration : IEntityTypeConfiguration<Profile>
 {

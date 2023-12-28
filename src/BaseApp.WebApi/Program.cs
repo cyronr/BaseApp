@@ -1,4 +1,4 @@
-using WebAPI.ApplicationConfiguration;
+using BaseApp.WebAPI.ApplicationConfiguration;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.Configure();

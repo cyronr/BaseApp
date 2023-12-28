@@ -1,6 +1,4 @@
-﻿using Domain.Models.ProfileModels;
-
-namespace WebAPI.Responses.AuthenticationResponses
+﻿namespace BaseApp.WebAPI.Responses.AuthenticationResponses
 {
     public record AuthenticationResponseProfile
     {

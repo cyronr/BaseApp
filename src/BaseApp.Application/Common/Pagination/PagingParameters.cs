@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Application.Common.Pagination
+namespace BaseApp.Application.Common.Pagination
 {
     public class PagingParameters
     {

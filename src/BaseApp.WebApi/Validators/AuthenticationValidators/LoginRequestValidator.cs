@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using API.Requests.AuthenticationRequests;
-using WebAPI.Validators.Utils;
+using BaseApp.WebAPI.Validators.Utils;
 
 namespace API.Validators.AuthenticationValidators;
 

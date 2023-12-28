@@ -1,7 +1,7 @@
-﻿using Application.Services;
+﻿using BaseApp.Application.Services;
 using BaseApp.Domain.Entities.ProfileEntities;
-using Domain.Exceptions;
-using Infrastructure.Common.Classes;
+using BaseApp.Domain.Exceptions;
+using BaseApp.Infrastructure.Common.Classes;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -9,7 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Infrastructure.Services;
+namespace BaseApp.Infrastructure.Services;
 
 public class JwtTokenService(ILogger<JwtTokenService> _logger, 
     IOptions<JwtSettings> jwtOptions) : IJwtTokenService

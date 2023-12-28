@@ -1,15 +1,15 @@
-﻿using Application.Features.AuthenticationFeatures.Common;
-using Application.Persistence;
-using Application.Persistence.Repositories;
-using Application.Services;
+﻿using BaseApp.Application.Features.AuthenticationFeatures.Common;
+using BaseApp.Application.Persistence;
+using BaseApp.Application.Persistence.Repositories;
+using BaseApp.Application.Services;
 using BaseApp.Domain.Entities.ProfileEntities;
-using Domain.Exceptions;
-using Domain.ModelsUpdateParams;
+using BaseApp.Domain.EntitiesParams.UpdateParams;
+using BaseApp.Domain.Exceptions;
 using Mapster;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Application.Features.AuthenticationFeatures.Commands.CreateAdminProfile;
+namespace BaseApp.Application.Features.AuthenticationFeatures.Commands.CreateAdminProfile;
 
 internal class CreateAdminProfileCommandHandler(ILogger<CreateAdminProfileCommandHandler> _logger,
     IUnitOfWork _unitOfWork,

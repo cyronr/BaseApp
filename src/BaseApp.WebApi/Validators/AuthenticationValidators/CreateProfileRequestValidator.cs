@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
 using Microsoft.IdentityModel.Tokens;
 using System.Text.RegularExpressions;
-using WebAPI.Requests.AuthenticationRequests;
-using WebAPI.Validators.Utils;
+using BaseApp.WebAPI.Requests.AuthenticationRequests;
+using BaseApp.WebAPI.Validators.Utils;
 
-namespace WebAPI.Validators.AuthenticationValidators;
+namespace BaseApp.WebAPI.Validators.AuthenticationValidators;
 
 public class CreateProfileRequestValidator<T> : AbstractValidator<T> where T : CreateProfileRequest
 {

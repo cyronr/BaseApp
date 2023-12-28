@@ -1,4 +1,4 @@
-﻿using WebAPI.Responses.AuthenticationResponses;
+﻿using BaseApp.WebAPI.Responses.AuthenticationResponses;
 
 namespace API.Requests.AuthenticationResponses;
 

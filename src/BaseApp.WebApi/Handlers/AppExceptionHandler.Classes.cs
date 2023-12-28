@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace WebAPI.Handlers;
+namespace BaseApp.WebAPI.Handlers;
 
 internal partial class AppExceptionHandler
 {

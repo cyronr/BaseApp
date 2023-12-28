@@ -1,7 +1,7 @@
-﻿using Application.Features.AuthenticationFeatures.Common;
+﻿using BaseApp.Application.Features.AuthenticationFeatures.Common;
 using MediatR;
 
-namespace Application.Features.AuthenticationFeatures.Queries.Login
+namespace BaseApp.Application.Features.AuthenticationFeatures.Queries.Login
 {
     public record LoginQuery
     (

@@ -1,7 +1,7 @@
-﻿using Application.Common.Http;
+﻿using BaseApp.Application.Common.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Infrastructure.Common.Http
+namespace BaseApp.Infrastructure.Common.Http
 {
     public class HttpRequester : IHttpRequester
     {

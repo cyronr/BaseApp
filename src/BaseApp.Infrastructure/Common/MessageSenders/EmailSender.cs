@@ -1,10 +1,10 @@
-﻿using Application.Common.MessageSenders;
+﻿using BaseApp.Application.Common.MessageSenders;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Net;
 using System.Net.Mail;
 
-namespace Infrastructure.Common.MessageSenders
+namespace BaseApp.Infrastructure.Common.MessageSenders
 {
     public class EmailSender : IEmailSender
     {

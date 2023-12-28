@@ -1,7 +1,7 @@
-﻿using Application.Features.AuthenticationFeatures.Common;
+﻿using BaseApp.Application.Features.AuthenticationFeatures.Common;
 using MediatR;
 
-namespace Application.Features.AuthenticationFeatures.Commands.CreateAdminProfile;
+namespace BaseApp.Application.Features.AuthenticationFeatures.Commands.CreateAdminProfile;
 
 public record CreateAdminProfileCommand
 (

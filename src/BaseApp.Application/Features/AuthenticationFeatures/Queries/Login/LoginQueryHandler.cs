@@ -1,15 +1,15 @@
-﻿using Application.Common;
-using Application.Features.AuthenticationFeatures.Common;
-using Application.Persistence;
-using Application.Persistence.Repositories;
-using Application.Services;
+﻿using BaseApp.Application.Common;
+using BaseApp.Application.Features.AuthenticationFeatures.Common;
+using BaseApp.Application.Persistence;
+using BaseApp.Application.Persistence.Repositories;
+using BaseApp.Application.Services;
 using BaseApp.Domain.Entities.ProfileEntities;
-using Domain.Exceptions;
+using BaseApp.Domain.Exceptions;
 using Mapster;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace Application.Features.AuthenticationFeatures.Queries.Login;
+namespace BaseApp.Application.Features.AuthenticationFeatures.Queries.Login;
 
 public class LoginQueryHandler(ILogger<LoginQueryHandler> _logger,
     IUnitOfWork _unitOfWork,

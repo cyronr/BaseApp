@@ -1,10 +1,10 @@
-﻿using Application.Features.AuthenticationFeatures.Common;
+﻿using BaseApp.Application.Features.AuthenticationFeatures.Common;
 using BaseApp.Domain.Entities.ProfileEntities;
 using Mapster;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace Application.Common.Mapping;
+namespace BaseApp.Application.Common.Mapping;
 
 internal static class MapsterConfiguration
 {

@@ -1,10 +1,11 @@
-﻿using Application.Common.AppProfile;
-using Application.Common.Mapping;
+﻿using Application;
+using BaseApp.Application.Common.AppProfile;
+using BaseApp.Application.Common.Mapping;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Application;
+namespace BaseApp.Application;
 
 public static class DependencyInjection
 {
@@ -13,10 +14,10 @@ public static class DependencyInjection
         services.AddScoped<ICurrentLoggedProfile, CurrentLoggedProfile>();
 
         services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
-        services.AddValidatorsFromAssemblyContaining<Application>();
+        services.AddValidatorsFromAssemblyContaining<BaseAppApplication>();
         services.RegisterMapsterConfiguration();
 
-        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Application).Assembly));
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(BaseAppApplication).Assembly));
 
         return services;
     }

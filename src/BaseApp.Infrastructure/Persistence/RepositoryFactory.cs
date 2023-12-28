@@ -1,8 +1,8 @@
-﻿using Application.Persistence;
-using Application.Persistence.Repositories;
+﻿using BaseApp.Application.Persistence;
+using BaseApp.Application.Persistence.Repositories;
 using BaseApp.Domain.Entities.BaseEntities;
 
-namespace Infrastructure.Persistence;
+namespace BaseApp.Infrastructure.Persistence;
 
 internal class RepositoryFactory(IServiceProvider _serviceProvider) : IRepositoryFactory
 {

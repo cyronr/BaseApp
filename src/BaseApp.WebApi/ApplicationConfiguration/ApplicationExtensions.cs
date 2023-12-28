@@ -1,4 +1,4 @@
-﻿namespace WebAPI.ApplicationConfiguration;
+﻿namespace BaseApp.WebAPI.ApplicationConfiguration;
 
 internal static class ApplicationExtensions
 {
