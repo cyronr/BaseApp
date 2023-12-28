@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Domain.Models.BaseModels;
+namespace BaseApp.Domain.Entities.BaseEntities;
 
 /// <summary>
 /// Base entity model. Every entity should inherit from it.
@@ -15,7 +15,7 @@ public abstract class Entity<T, TStatus, TEvent> : Entity
     public TStatus Status { get; private set; }
 
     /// <summary> List of events related to entity (eg. created, deleted, modified) </summary>
-    public List<TEvent> Events {  get; private set; }
+    public List<TEvent> Events { get; private set; }
 
     protected Entity() : base()
     {

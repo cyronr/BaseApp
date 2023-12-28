@@ -1,4 +1,4 @@
-using Domain.Models.ProfileModels;
+using BaseApp.Domain.Entities.ProfileEntities;
 using Infrastructure.Common.Classes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;

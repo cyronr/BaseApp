@@ -1,6 +1,6 @@
-using Domain.Models.BaseModels;
+using BaseApp.Domain.Entities.BaseEntities;
 
-namespace Domain.Models.ProfileModels;
+namespace BaseApp.Domain.Entities.ProfileEntities;
 
 public class ProfileEvent : EventEntity<ProfileEventType>
 {

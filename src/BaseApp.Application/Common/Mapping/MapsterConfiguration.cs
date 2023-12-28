@@ -1,5 +1,5 @@
 ﻿using Application.Features.AuthenticationFeatures.Common;
-using Domain.Models.ProfileModels;
+using BaseApp.Domain.Entities.ProfileEntities;
 using Mapster;
 using Microsoft.Extensions.DependencyInjection;
 using System;

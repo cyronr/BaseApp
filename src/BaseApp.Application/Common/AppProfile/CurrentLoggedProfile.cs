@@ -1,7 +1,7 @@
 ﻿using Application.Persistence;
 using Application.Persistence.Repositories;
+using BaseApp.Domain.Entities.ProfileEntities;
 using Domain.Exceptions;
-using Domain.Models.ProfileModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Security.Claims;

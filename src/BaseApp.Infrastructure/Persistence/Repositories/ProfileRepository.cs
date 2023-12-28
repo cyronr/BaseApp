@@ -1,5 +1,5 @@
 ﻿using Application.Persistence.Repositories;
-using Domain.Models.ProfileModels;
+using BaseApp.Domain.Entities.ProfileEntities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 

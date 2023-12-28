@@ -1,4 +1,4 @@
-﻿namespace Domain.Models.ProfileModels;
+﻿namespace BaseApp.Domain.Entities.ProfileEntities;
 
 public enum ProfileEventType
 {

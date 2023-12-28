@@ -1,4 +1,4 @@
-﻿using Domain.Models.BaseModels;
+﻿using BaseApp.Domain.Entities.BaseEntities;
 using System.Linq.Expressions;
 
 namespace Application.Persistence.Repositories;

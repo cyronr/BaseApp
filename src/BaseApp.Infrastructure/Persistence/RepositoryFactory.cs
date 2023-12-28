@@ -1,6 +1,6 @@
 ﻿using Application.Persistence;
 using Application.Persistence.Repositories;
-using Domain.Models.BaseModels;
+using BaseApp.Domain.Entities.BaseEntities;
 
 namespace Infrastructure.Persistence;
 

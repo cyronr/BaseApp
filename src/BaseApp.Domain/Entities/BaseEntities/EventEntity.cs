@@ -1,4 +1,4 @@
-﻿namespace Domain.Models.BaseModels;
+﻿namespace BaseApp.Domain.Entities.BaseEntities;
 
 
 /// <summary>

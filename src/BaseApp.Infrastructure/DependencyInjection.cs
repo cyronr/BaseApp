@@ -4,7 +4,7 @@ using Application.Common.MessageSenders;
 using Application.Persistence;
 using Application.Persistence.Repositories;
 using Application.Services;
-using Domain.Models.ProfileModels;
+using BaseApp.Domain.Entities.ProfileEntities;
 using Infrastructure.Common;
 using Infrastructure.Common.Classes;
 using Infrastructure.Common.Http;

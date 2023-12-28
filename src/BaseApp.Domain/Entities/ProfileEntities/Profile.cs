@@ -1,9 +1,9 @@
-using Domain.Models.BaseModels;
-using Domain.ModelsUpdateParams;
+using BaseApp.Domain.Entities.BaseEntities;
+using BaseApp.Domain.EntitiesParams.UpdateParams;
 using Mapster;
 using System.Net.Mail;
 
-namespace Domain.Models.ProfileModels;
+namespace BaseApp.Domain.Entities.ProfileEntities;
 
 public class Profile : Entity<Profile, ProfileStatus, ProfileEvent>
 {
@@ -47,7 +47,7 @@ public class Profile : Entity<Profile, ProfileStatus, ProfileEvent>
     /// <param name="updateParams"></param>
     public void Update(ProfileUpdateParams updateParams)
     {
-        TypeAdapter.Adapt(updateParams, this, ProfileUpdateParams.MappingConfig);
+        updateParams.Adapt(this, ProfileUpdateParams.MappingConfig);
     }
 
     /// <summary>

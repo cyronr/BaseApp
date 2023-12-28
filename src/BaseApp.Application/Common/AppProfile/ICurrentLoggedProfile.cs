@@ -1,4 +1,4 @@
-﻿using Domain.Models.ProfileModels;
+﻿using BaseApp.Domain.Entities.ProfileEntities;
 
 namespace Application.Common.AppProfile;
 

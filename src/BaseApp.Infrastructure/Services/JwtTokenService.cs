@@ -1,6 +1,6 @@
 ﻿using Application.Services;
+using BaseApp.Domain.Entities.ProfileEntities;
 using Domain.Exceptions;
-using Domain.Models.ProfileModels;
 using Infrastructure.Common.Classes;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;

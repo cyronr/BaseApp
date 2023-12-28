@@ -2,8 +2,8 @@
 using Application.Persistence;
 using Application.Persistence.Repositories;
 using Application.Services;
+using BaseApp.Domain.Entities.ProfileEntities;
 using Domain.Exceptions;
-using Domain.Models.ProfileModels;
 using Domain.ModelsUpdateParams;
 using Mapster;
 using MediatR;

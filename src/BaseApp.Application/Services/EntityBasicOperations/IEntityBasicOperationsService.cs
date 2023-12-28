@@ -1,4 +1,4 @@
-﻿using Domain.Models.BaseModels;
+﻿using BaseApp.Domain.Entities.BaseEntities;
 
 namespace Application.Services.EntityBasicOperations;
 
