@@ -8,11 +8,11 @@ EXPOSE 8081
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
-WORKDIR "."
-COPY ["BaseApp.WebApi.csproj", "BaseApp.WebApi/"]
+WORKDIR "/app"
+COPY ["src/BaseApp.WebApi/BaseApp.WebApi.csproj", "."]
 RUN dotnet restore "BaseApp.WebApi.csproj"
 COPY . .
-WORKDIR "."
+WORKDIR "/app"
 RUN dotnet build "BaseApp.WebApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
