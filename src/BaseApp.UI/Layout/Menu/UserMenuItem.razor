@@ -1,0 +1,11 @@
+﻿<li>
+    <a href="@To" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">@Text</a>
+</li>
+
+@code {
+    [Parameter]
+    public string To { get; set; }
+
+    [Parameter]
+    public string Text { get; set; }
+}
