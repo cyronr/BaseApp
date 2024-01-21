@@ -25,7 +25,7 @@ public interface IRepository<TEntity> : IRepository where TEntity : Entity
     /// <remarks> Accepts additional conditions </remarks>
     /// <param name="filter"></param>
     /// <returns></returns>
-    Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null);
+    Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null);
 
     /// <summary>
     /// Creates Entity

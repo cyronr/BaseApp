@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BaseApp.Domain\BaseApp.Domain.csproj" />
     <ProjectReference Include="..\BaseApp.Extensions\BaseApp.Extensions.csproj" />
+    <ProjectReference Include="..\BaseApp.Shared\BaseApp.Shared.csproj" />
   </ItemGroup>
 
 	<ItemGroup>

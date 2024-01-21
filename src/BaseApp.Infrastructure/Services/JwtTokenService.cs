@@ -1,4 +1,4 @@
-﻿using BaseApp.Application.Services;
+﻿using BaseApp.Application.Services.Interfaces;
 using BaseApp.Domain.Entities.ProfileEntities;
 using BaseApp.Domain.Exceptions;
 using BaseApp.Infrastructure.Common.Classes;

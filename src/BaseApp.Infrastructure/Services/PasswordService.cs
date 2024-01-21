@@ -1,4 +1,4 @@
-﻿using BaseApp.Application.Services;
+﻿using BaseApp.Application.Services.Interfaces;
 using Microsoft.Extensions.Logging;
 
 namespace BaseApp.Infrastructure.Services;

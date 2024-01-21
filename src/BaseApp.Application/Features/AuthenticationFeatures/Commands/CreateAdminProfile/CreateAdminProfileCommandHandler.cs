@@ -1,7 +1,8 @@
 ﻿using BaseApp.Application.Features.AuthenticationFeatures.Common;
+using BaseApp.Application.Models.Emailing;
 using BaseApp.Application.Persistence;
 using BaseApp.Application.Persistence.Repositories;
-using BaseApp.Application.Services;
+using BaseApp.Application.Services.Interfaces;
 using BaseApp.Domain.Entities.ProfileEntities;
 using BaseApp.Domain.EntitiesParams.UpdateParams;
 using BaseApp.Domain.Exceptions;
@@ -11,16 +12,19 @@ using Microsoft.Extensions.Logging;
 
 namespace BaseApp.Application.Features.AuthenticationFeatures.Commands.CreateAdminProfile;
 
-internal class CreateAdminProfileCommandHandler(ILogger<CreateAdminProfileCommandHandler> _logger,
-    IUnitOfWork _unitOfWork,
-    IPasswordService _passwordService,
-    IJwtTokenService _jwtTokenService) : IRequestHandler<CreateAdminProfileCommand, AuthenticationResult>
+internal class CreateAdminProfileCommandHandler(ILogger<CreateAdminProfileCommandHandler> logger,
+    IUnitOfWork unitOfWork,
+    IPasswordService passwordService,
+    IJwtTokenService jwtTokenService,
+    IEmailerService emailerService
+    ) : IRequestHandler<CreateAdminProfileCommand, AuthenticationResult>
 {
     #region DI
-    private readonly ILogger<CreateAdminProfileCommandHandler> _logger = _logger;
-    private readonly IUnitOfWork _unitOfWork = _unitOfWork;
-    private readonly IPasswordService _passwordService = _passwordService;
-    private readonly IJwtTokenService _jwtTokenService = _jwtTokenService;
+    private readonly ILogger<CreateAdminProfileCommandHandler> _logger = logger;
+    private readonly IUnitOfWork _unitOfWork = unitOfWork;
+    private readonly IPasswordService _passwordService = passwordService;
+    private readonly IJwtTokenService _jwtTokenService = jwtTokenService;
+    private readonly IEmailerService _emailerService = emailerService;
     #endregion
 
     public async Task<AuthenticationResult> Handle(CreateAdminProfileCommand request, CancellationToken cancellationToken)
@@ -37,6 +41,13 @@ internal class CreateAdminProfileCommandHandler(ILogger<CreateAdminProfileComman
 
         await profileRepository.CreateAsync(profile);
         await _unitOfWork.SaveChangesAsync();
+
+        await _emailerService.Send(new EmailMessage
+        {
+            To = [new EmailAddress("remigiusz.cyron@odbiorca.pl")],
+            Subject = "Test",
+            Body = "<h1>Email header</h1><p>First amail test</p>"
+        });
 
         return new AuthenticationResult(profile.Adapt<ProfileDto>(), _jwtTokenService.GenerateToken(profile));
     }

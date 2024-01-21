@@ -2,7 +2,7 @@
 using BaseApp.Application.Features.AuthenticationFeatures.Common;
 using BaseApp.Application.Persistence;
 using BaseApp.Application.Persistence.Repositories;
-using BaseApp.Application.Services;
+using BaseApp.Application.Services.Interfaces;
 using BaseApp.Domain.Entities.ProfileEntities;
 using BaseApp.Domain.Exceptions;
 using Mapster;

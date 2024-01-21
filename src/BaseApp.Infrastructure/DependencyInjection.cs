@@ -3,7 +3,7 @@ using BaseApp.Application.Common.Http;
 using BaseApp.Application.Common.MessageSenders;
 using BaseApp.Application.Persistence;
 using BaseApp.Application.Persistence.Repositories;
-using BaseApp.Application.Services;
+using BaseApp.Application.Services.Interfaces;
 using BaseApp.Domain.Entities.ProfileEntities;
 using BaseApp.Infrastructure.Common;
 using BaseApp.Infrastructure.Common.Classes;
@@ -57,6 +57,8 @@ public static class DependencyInjection
 
         services.AddSingleton<IHttpRequester, HttpRequester>();
         services.AddSingleton<IEmailSender, EmailSender>();
+        services.AddSingleton<IEmailSender, EmailSender>();
+
 
         return services;
     }
@@ -65,6 +67,7 @@ public static class DependencyInjection
     {
         services.AddSingleton<IJwtTokenService, JwtTokenService>();
         services.AddSingleton<IPasswordService, PasswordService>();
+        services.AddSingleton<IEmailerService, EmailerService>();
 
         return services;
     }

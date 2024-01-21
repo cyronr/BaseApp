@@ -31,7 +31,7 @@ internal abstract class GenericRepository<TEntity> : IRepository<TEntity> where 
         return await query.AsNoTracking().FirstOrDefaultAsync(e => e.UUID == uuid);
     }
 
-    public async Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null)
+    public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? filter = null)
     {
         IQueryable<TEntity> query = _appDbContext.Set<TEntity>().ApplyFilter(filter);
 
